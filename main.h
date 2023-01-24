@@ -24,6 +24,7 @@
  * @fmt: The format.
  * @fn: The function associated.
  */
+
 struct fmt
 {
 	char fmt;
@@ -37,6 +38,7 @@ struct fmt
  * @fmt: The format.
  * @fm_t: The function associated.
  */
+
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
@@ -106,7 +108,7 @@ int write_unsgnd(int is_negative, int ind,
 char buffer[],
 	int flags, int width, int precision, int size);
 
-/****************** UTILS ******************/
+/*************** UTILS ****************/
 int is_printable(char);
 int append_hexa_code(char, char[], int);
 int is_digit(char);
